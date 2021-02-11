@@ -1,25 +1,18 @@
 {
   "files": {
-    "main.css": "/tokyo-survival-pub/static/css/main.a1085056.chunk.css",
-    "main.js": "/tokyo-survival-pub/static/js/main.57b10edd.chunk.js",
-    "main.js.map": "/tokyo-survival-pub/static/js/main.57b10edd.chunk.js.map",
-    "runtime-main.js": "/tokyo-survival-pub/static/js/runtime-main.7313f760.js",
-    "runtime-main.js.map": "/tokyo-survival-pub/static/js/runtime-main.7313f760.js.map",
-    "static/css/2.bdb85385.chunk.css": "/tokyo-survival-pub/static/css/2.bdb85385.chunk.css",
-    "static/js/2.fe05d713.chunk.js": "/tokyo-survival-pub/static/js/2.fe05d713.chunk.js",
-    "static/js/2.fe05d713.chunk.js.map": "/tokyo-survival-pub/static/js/2.fe05d713.chunk.js.map",
-    "static/js/3.ef9232ff.chunk.js": "/tokyo-survival-pub/static/js/3.ef9232ff.chunk.js",
-    "static/js/3.ef9232ff.chunk.js.map": "/tokyo-survival-pub/static/js/3.ef9232ff.chunk.js.map",
-    "index.html": "/tokyo-survival-pub/index.html",
-    "static/css/2.bdb85385.chunk.css.map": "/tokyo-survival-pub/static/css/2.bdb85385.chunk.css.map",
-    "static/css/main.a1085056.chunk.css.map": "/tokyo-survival-pub/static/css/main.a1085056.chunk.css.map",
-    "static/js/2.fe05d713.chunk.js.LICENSE.txt": "/tokyo-survival-pub/static/js/2.fe05d713.chunk.js.LICENSE.txt"
+    "static/js/0.chunk.js": "/tokyo-survival-pub/static/js/0.chunk.js",
+    "static/js/0.chunk.js.map": "/tokyo-survival-pub/static/js/0.chunk.js.map",
+    "static/js/1.chunk.js": "/tokyo-survival-pub/static/js/1.chunk.js",
+    "static/js/1.chunk.js.map": "/tokyo-survival-pub/static/js/1.chunk.js.map",
+    "main.js": "/tokyo-survival-pub/static/js/main.chunk.js",
+    "main.js.map": "/tokyo-survival-pub/static/js/main.chunk.js.map",
+    "runtime-main.js": "/tokyo-survival-pub/static/js/bundle.js",
+    "runtime-main.js.map": "/tokyo-survival-pub/static/js/bundle.js.map",
+    "index.html": "/tokyo-survival-pub/index.html"
   },
   "entrypoints": [
-    "static/js/runtime-main.7313f760.js",
-    "static/css/2.bdb85385.chunk.css",
-    "static/js/2.fe05d713.chunk.js",
-    "static/css/main.a1085056.chunk.css",
-    "static/js/main.57b10edd.chunk.js"
+    "static/js/bundle.js",
+    "static/js/0.chunk.js",
+    "static/js/main.chunk.js"
   ]
 }
