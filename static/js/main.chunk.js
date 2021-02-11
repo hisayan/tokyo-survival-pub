@@ -279,12 +279,42 @@ async function getElevation(lng, lat) {
 
 let charactor;
 let fires = [];
-let runaway = [];
 
 const App = () => {
   _s();
 
   const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
+  const [runaway, setRunaway] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((runaway, action) => {
+    // console.log(action)  
+    // console.log([...runaway, action])
+    switch (action.type) {
+      case 'ADD':
+        const newLngLat = {
+          id: action.id,
+          lngLat: action.lngLat
+        };
+        return [...runaway, newLngLat];
+        break;
+
+      case 'MOVE':
+        const b = [];
+
+        for (let i = 0; i < runaway.length; i++) {
+          if (runaway[i].id == action.id) {
+            b.push({
+              id: action.id,
+              lngLat: action.lngLat
+            });
+          } else {
+            b.push(runaway[i]);
+          }
+        }
+
+        return b;
+    }
+
+    return runaway;
+  }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
     _firebase__WEBPACK_IMPORTED_MODULE_7__["default"].auth().signInAnonymously().catch(function (error) {
       console.log(`${error.code}, ${error.message}`);
@@ -341,8 +371,8 @@ const App = () => {
     }) => {
       const map = new mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default.a.Map({
         container: mapContainer.current !== null ? mapContainer.current : "",
-        style: "mapbox://styles/mapbox/streets-v11",
-        // stylesheet location
+        // style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
+        style: "mapbox://styles/hisayan/ckl0k4enf0lwl17nvffsjmwv4",
         center: [pov.lng, pov.lat],
         zoom: pov.zoom,
         pitch: pov.pitch,
@@ -373,9 +403,10 @@ const App = () => {
             zoom: map.getZoom(),
             pitch: map.getPitch(),
             bearing: map.getBearing()
-          }); // 初期値。どうしてじゃ
-          // console.log('move', followMe.toString(), JSON.stringify(pov))
-        });
+          });
+        }); // 初期値。どうしてじゃ
+        // console.log('move', followMe.toString(), JSON.stringify(pov))
+
         charactor = new _charactor__WEBPACK_IMPORTED_MODULE_10__["default"]({
           lng: 139.7,
           lat: 35.68
@@ -423,8 +454,32 @@ const App = () => {
             'sky-atmosphere-sun-intensity': 15
           }
         });
+        map === null || map === void 0 ? void 0 : map.addSource('route-source', {
+          'type': 'geojson',
+          'data': {
+            'type': 'Feature',
+            'properties': {},
+            'geometry': {
+              'type': 'LineString',
+              'coordinates': []
+            }
+          }
+        });
+        map === null || map === void 0 ? void 0 : map.addLayer({
+          'id': 'routeroute',
+          'type': 'line',
+          'source': 'route-source',
+          'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+          },
+          'paint': {
+            'line-color': '#888',
+            'line-width': 8
+          }
+        });
+        setMap(map);
       });
-      setMap(map);
     };
 
     if (!map) initializeMap({
@@ -436,6 +491,8 @@ const App = () => {
     };
   }, [map]);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    console.log('useeffect map');
+
     const onClick = async e => {
       // console.log('click', e.lngLat, await getElevation(e.lngLat.lng, e.lngLat.lat));
       // const routeLine = polyline.encode([[e.lngLat.lng, e.lngLat.lat], [40.7, -120.95], [43.252, -126.453]]);
@@ -444,23 +501,34 @@ const App = () => {
         case 'line':
           var el = document.createElement('div');
           el.className = 'marker';
+          el.id = getUniqueMd5();
 
           if (map) {
             const marker = new mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default.a.Marker({
+              element: el,
               draggable: true
             }).setLngLat(e.lngLat).addTo(map);
+            let a = {
+              type: 'ADD',
+              id: el.id,
+              lngLat: e.lngLat
+            };
+            setRunaway(a);
 
             const onDragEnd = () => {
               var lngLat = marker.getLngLat();
               console.log(lngLat); // coordinates.style.display = 'block';
               // coordinates.innerHTML =
               // 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+
+              setRunaway({
+                type: 'MOVE',
+                id: el.id,
+                lngLat: lngLat
+              });
             };
 
-            marker.on('dragend', onDragEnd);
-            marker.setPopup(new mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default.a.Popup({
-              offset: 25
-            }).setHTML('< h4>remove</h4'));
+            marker.on('dragend', onDragEnd); // marker.setPopup(new mapboxgl.Popup({ offset: 25 }).setHTML('<h4>remove</h4'));
           }
 
           break;
@@ -479,9 +547,22 @@ const App = () => {
 
     map === null || map === void 0 ? void 0 : map.on('click', onClick);
     return () => {
-      map === null || map === void 0 ? void 0 : map.off('click', onClick);
+      map === null || map === void 0 ? void 0 : map.off('click', onClick); // map?.removeLayer('routeroute')
+      // map?.removeSource('route-source')
     };
   }, [map, followMe, operation]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    var _map$getSource;
+
+    map === null || map === void 0 ? void 0 : (_map$getSource = map.getSource('route-source')) === null || _map$getSource === void 0 ? void 0 : _map$getSource.setData({
+      'type': 'Feature',
+      'properties': {},
+      'geometry': {
+        'type': 'LineString',
+        'coordinates': runaway.map(e => [e.lngLat.lng, e.lngLat.lat])
+      }
+    });
+  }, [runaway]);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
     povRef.on("value", value => {
       console.log("povRef.on", value);
@@ -576,7 +657,7 @@ const App = () => {
         children: "sync view"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 437,
+        lineNumber: 521,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["FormControlLabel"], {
         control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
@@ -584,14 +665,14 @@ const App = () => {
           onChange: toggleChecked
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 439,
+          lineNumber: 523,
           columnNumber: 20
         }, undefined),
         label: "Follow me",
         labelPlacement: "start"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 438,
+        lineNumber: 522,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(StyledToggleButtonGroup, {
         value: operation,
@@ -604,7 +685,7 @@ const App = () => {
           children: "line"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 445,
+          lineNumber: 529,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButton"], {
           value: "fire",
@@ -612,7 +693,7 @@ const App = () => {
           children: "fire"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 448,
+          lineNumber: 532,
           columnNumber: 11
         }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButton"], {
           value: "char",
@@ -620,17 +701,17 @@ const App = () => {
           children: "char"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 451,
+          lineNumber: 535,
           columnNumber: 11
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 444,
+        lineNumber: 528,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 436,
+      lineNumber: 520,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "sidebarStyle",
@@ -638,12 +719,12 @@ const App = () => {
         children: ["Longitude: ", pov.lng.toFixed(4), " | Latitude: ", pov.lat.toFixed(4), " | Zoom: ", pov.zoom.toFixed(2), " | Pitch: ", pov.pitch.toFixed(2), " | Bearing: ", pov.bearing.toFixed(2)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 457,
+        lineNumber: 541,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 456,
+      lineNumber: 540,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       ref: mapContainer,
@@ -651,17 +732,17 @@ const App = () => {
       className: "mapContainer"
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 459,
+      lineNumber: 543,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 435,
+    lineNumber: 519,
     columnNumber: 5
   }, undefined);
 };
 
-_s(App, "fb6ssU4+zof/XgllztMeYWSw57M=");
+_s(App, "t/cNKYDWhGgzUi+I5lgIOO/n/vg=");
 
 _c = App;
 /* harmony default export */ __webpack_exports__["default"] = (App);
