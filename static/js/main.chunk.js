@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ".sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold; }\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0; }\n\n.marker {\n  background-color: #f00;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  cursor: pointer; }\n\n#fit {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto;\n  width: 50%;\n  height: 40px;\n  padding: 10px;\n  border: none;\n  border-radius: 3px;\n  font-size: 12px;\n  text-align: center;\n  color: #fff;\n  background: #ee8a65; }\n\n.header {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto; }\n", "",{"version":3,"sources":["webpack://src/App.scss"],"names":[],"mappings":"AAAA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,qBAAqB;EACrB,YAAY;EACZ,iBAAiB,EAAA;;AAGnB;EACE,kBAAkB;EAClB,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS,EAAA;;AAGX;EAIE,sBAAsB;EACtB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,eAAe,EAAA;;AAGjB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,kBAAkB;EAClB,WAAW;EACX,mBAAmB,EAAA;;AAGrB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA","sourcesContent":[".sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold;\n}\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n}\n\n.marker {\n  // background-image: url('mapbox-icon.png');\n  // background-size: cover;\n\n  background-color: #f00;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  cursor: pointer;\n}\n\n#fit {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n  width: 50%;\n  height: 40px;\n  padding: 10px;\n  border: none;\n  border-radius: 3px;\n  font-size: 12px;\n  text-align: center;\n  color: #fff;\n  background: #ee8a65;\n}\n\n.header {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody * {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  user-select: none; }\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold; }\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0; }\n\n.map {\n  position: absolute !important;\n  top: 0;\n  bottom: 0;\n  width: 100%; }\n\n.controls {\n  position: absolute;\n  top: 0;\n  right: 0; }\n\n.marker {\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer; }\n\n#btnCheat {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto;\n  width: 50%;\n  height: 40px;\n  padding: 10px;\n  border: none;\n  border-radius: 3px;\n  font-size: 12px;\n  text-align: center;\n  color: #fff;\n  background: #ee8a65; }\n\n.header {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto; }\n\n.footer {\n  z-index: 1 !important;\n  display: none;\n  background-color: rgba(136, 136, 136, 0.5);\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  height: 3em;\n  padding-top: 1em;\n  text-align: center; }\n\nbody.cheatmode .footer {\n  display: block; }\n\nbody.cheatmode #btnCheat {\n  display: none; }\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan; }\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white; }\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em; } }\n\n#cheating {\n  margin: auto; }\n", "",{"version":3,"sources":["webpack://src/App.scss"],"names":[],"mappings":"AAAA;EAAO,SAAQ;EAAE,UAAS;EAAE,gBAAe,EAAA;;AAC3C;EACG,2BAA2B;EACzB,yBAAyB;EAGjB,iBAAiB,EAAA;;AAG9B;EACE,qBAAqB;EACrB,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,qBAAqB;EACrB,YAAY;EACZ,iBAAiB,EAAA;;AAGnB;EACE,kBAAkB;EAClB,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS,EAAA;;AAQX;EACE,6BAA4B;EAC5B,MAAK;EACL,SAAQ;EACR,WAAU,EAAA;;AAEZ;EACE,kBAAiB;EACjB,MAAK;EACL,QAAO,EAAA;;AAGT;EAIE,uBAAuB;EACvB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;EACnB,iBAAiB;EACjB,mBAAmB;EACnB,eAAe,EAAA;;AAGjB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB;EAChB,UAAU;EACV,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,eAAe;EACf,kBAAkB;EAClB,WAAW;EACX,mBAAmB,EAAA;;AAGrB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA;;AAIlB;EACE,qBAAqB;EAErB,aAAY;EACZ,0CAAmC;EAEnC,eAAc;EACd,SAAQ;EACR,OAAM;EACN,WAAU;EACV,WAAU;EACV,WAAU;EACV,gBAAgB;EAChB,kBAAoB,EAAA;;AAGtB;EACE,cAAa,EAAA;;AAGf;EACE,aAAa,EAAA;;AAGf;EACE,oBAAoB;EACpB,2BAA2B,EAAA;;AAG7B;EACE,oBAAoB;EACpB,uBAAuB,EAAA;;AAGzB;EACE;IACE,mBAAmB,EAAA,EACpB;;AAGH;EACE,YAAY,EAAA","sourcesContent":["body { margin:0; padding:0; overflow:hidden; }\nbody * {\n   -webkit-touch-callout: none;\n     -webkit-user-select: none;\n        -moz-user-select: none;\n         -ms-user-select: none;\n             user-select: none;\n}\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold;\n}\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n}\n\n\n#wrapper {\n\n}\n\n.map {\n  position:absolute !important;\n  top:0;\n  bottom:0;\n  width:100%;\n}\n.controls {\n  position:absolute;\n  top:0;\n  right:0;\n}\n\n.marker {\n  // background-image: url('mapbox-icon.png');\n  // background-size: cover;\n\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer;\n}\n\n#btnCheat {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n  width: 50%;\n  height: 40px;\n  padding: 10px;\n  border: none;\n  border-radius: 3px;\n  font-size: 12px;\n  text-align: center;\n  color: #fff;\n  background: #ee8a65;\n}\n\n.header {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n}\n\n\n.footer {\n  z-index: 1 !important;\n\n  display:none;\n  background-color: rgba($color: #888, $alpha: 0.5);\n\n  position:fixed;\n  bottom:0;\n  left:0;\n  z-index:10;\n  width:100%;\n  height:3em;\n  padding-top: 1em;\n  text-align: center  ;\n}\n\nbody.cheatmode .footer {\n  display:block;\n}\n\nbody.cheatmode #btnCheat {\n  display: none;\n}\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan;\n}\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white;\n}\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em;\n  }\n}\n\n#cheating {\n  margin: auto;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -37,7 +37,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "html,\nbody {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n", "",{"version":3,"sources":["webpack://src/index.scss"],"names":[],"mappings":"AAAA;;EAEE,SAAS;EACT,UAAU,EAAA;;AAGZ;EACE,8JAEY;EACZ,mCAAmC;EACnC,kCAAkC,EAAA","sourcesContent":["html,\nbody {\n  margin: 0;\n  padding: 0;\n}\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "html,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%; }\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n", "",{"version":3,"sources":["webpack://src/index.scss"],"names":[],"mappings":"AAAA;;EAEE,SAAS;EACT,UAAU;EACV,YAAY;EACZ,WAAW,EAAA;;AAGb;EACE,8JAEY;EACZ,mCAAmC;EACnC,kCAAkC,EAAA","sourcesContent":["html,\nbody {\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n}\n\nbody {\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -154,15 +154,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_App_scss__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! mapbox-gl */ "./node_modules/mapbox-gl/dist/mapbox-gl.js");
 /* harmony import */ var mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
-/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./firebase */ "./src/firebase.ts");
-/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
-/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! md5 */ "./node_modules/md5/md5.js");
-/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(md5__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _charactor__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./charactor */ "./src/charactor.ts");
-/* harmony import */ var _fire__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./fire */ "./src/fire.ts");
+/* harmony import */ var mapbox_gl_compare__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! mapbox-gl-compare */ "./node_modules/mapbox-gl-compare/index.js");
+/* harmony import */ var mapbox_gl_compare__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_compare__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var mapbox_gl_compare_dist_mapbox_gl_compare_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! mapbox-gl-compare/dist/mapbox-gl-compare.css */ "./node_modules/mapbox-gl-compare/dist/mapbox-gl-compare.css");
+/* harmony import */ var mapbox_gl_compare_dist_mapbox_gl_compare_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_compare_dist_mapbox_gl_compare_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! mapbox-gl/dist/mapbox-gl.css */ "./node_modules/mapbox-gl/dist/mapbox-gl.css");
+/* harmony import */ var mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(mapbox_gl_dist_mapbox_gl_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./firebase */ "./src/firebase.ts");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var _material_ui_core_Slider__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Slider */ "./node_modules/@material-ui/core/esm/Slider/index.js");
+/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! md5 */ "./node_modules/md5/md5.js");
+/* harmony import */ var md5__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(md5__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _charactor__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./charactor */ "./src/charactor.ts");
+/* harmony import */ var _fire__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./fire */ "./src/fire.ts");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -173,6 +178,9 @@ var _jsxFileName = "C:\\Users\\hisayan\\Documents\\PLATEAU\\tokyo-survival\\src\
 
 
  // import ReactDOM from 'react-dom';
+
+
+ //@ts-ignore
 
 
  // import { throws } from 'assert';
@@ -187,10 +195,11 @@ var _jsxFileName = "C:\\Users\\hisayan\\Documents\\PLATEAU\\tokyo-survival\\src\
 
 
 
+
 function getUniqueMd5(myStrong) {
   let strong = 1000;
   if (myStrong) strong = myStrong;
-  return md5__WEBPACK_IMPORTED_MODULE_9___default()(new Date().getTime().toString(16) + Math.floor(strong * Math.random()).toString(16));
+  return md5__WEBPACK_IMPORTED_MODULE_12___default()(new Date().getTime().toString(16) + Math.floor(strong * Math.random()).toString(16));
 }
 
 const uniqID = getUniqueMd5();
@@ -205,21 +214,27 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
   },
   divider: {
     margin: theme.spacing(1, 0.5)
+  },
+  cheating: {
+    width: 240
   }
-}));
-const StyledToggleButtonGroup = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])(theme => ({
-  grouped: {
-    backgroundColor: '#fff',
-    margin: theme.spacing(0.5),
-    border: 'none',
-    '&:not(:first-child)': {
-      borderRadius: theme.shape.borderRadius
-    },
-    '&:first-child': {
-      borderRadius: theme.shape.borderRadius
-    }
-  }
-}))(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButtonGroup"]); // const styles: CSSProperties = {
+})); // const StyledToggleButtonGroup = withStyles((theme) => ({
+//   grouped: {
+//     backgroundColor: '#fff',
+//     margin: theme.spacing(0.2),
+//     border: 'none',
+//     '&:not(:first-child)': {
+//       borderRadius: theme.shape.borderRadius,
+//     },
+//     '&:first-child': {
+//       borderRadius: theme.shape.borderRadius,
+//     },
+//   },
+//   selected: {
+//     backgroundColor: '#ff0'
+//   }
+// }))(ToggleButtonGroup);
+// const styles: CSSProperties = {
 //   width: '100vw',
 //   height: 'calc(100vh - 80px)',
 //   position: 'absolute',
@@ -244,38 +259,36 @@ if (!roomName || roomName == '/') {
 // https://qiita.com/tminasen/items/03a2e736910e937bb61f
 
 
-const povRef = _firebase__WEBPACK_IMPORTED_MODULE_7__["db"].ref(roomName + '/pov');
-const followMeRef = _firebase__WEBPACK_IMPORTED_MODULE_7__["db"].ref(roomName + '/followMe'); // https://blog.mapbox.com/global-elevation-data-6689f1d0ba65
+const povRef = _firebase__WEBPACK_IMPORTED_MODULE_9__["db"].ref(roomName + '/pov');
+const followMeRef = _firebase__WEBPACK_IMPORTED_MODULE_9__["db"].ref(roomName + '/followMe'); // https://blog.mapbox.com/global-elevation-data-6689f1d0ba65
 // height = -10000 + ((R * 256 * 256 + G * 256 + B) * 0.1)
-
-async function getElevation(lng, lat) {
-  // make API request
-  var query = 'https://api.mapbox.com/v4/mapbox.mapbox-terrain-v2/tilequery/' + lng + ',' + lat + '.json?layers=contour&limit=50&access_token=' + mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default.a.accessToken;
-  console.log(query);
-  fetch(query, {
-    method: "get"
-  }).then(response => response.text()).then(data => {
-    // Display the longitude and latitude values
-    // lngDisplay.textContent = lng.toFixed(2);
-    // latDisplay.textContent = lat.toFixed(2);
-    // Get all the returned features
-    let d = JSON.parse(data);
-    var allFeatures = d.features;
-    console.log(allFeatures); // Create an empty array to add elevation data to
-
-    var elevations = []; // For each returned feature, add elevation data to the elevations array
-
-    for (var i = 0; i < allFeatures.length; i++) {
-      elevations.push(allFeatures[i].properties.ele);
-    } // In the elevations array, find the largest value
-
-
-    var highestElevation = Math.max(...elevations); // Display the largest elevation value
-
-    console.log(highestElevation);
-    return highestElevation;
-  });
-}
+// async function getElevation(lng: number, lat: number) {
+// make API request
+// var query = 'https://api.mapbox.com/v4/mapbox.mapbox-terrain-v2/tilequery/' + lng + ',' + lat + '.json?layers=contour&limit=50&access_token=' + mapboxgl.accessToken;
+// console.log(query)
+//   fetch(query, {
+//     method: "get"
+//   }).then((response) => response.text()).then((data: string) => {
+//     // Display the longitude and latitude values
+//     // lngDisplay.textContent = lng.toFixed(2);
+//     // latDisplay.textContent = lat.toFixed(2);
+//     // Get all the returned features
+//     let d = JSON.parse(data)
+//     var allFeatures = d.features;
+//     console.log(allFeatures)
+//     // Create an empty array to add elevation data to
+//     var elevations = [];
+//     // For each returned feature, add elevation data to the elevations array
+//     for (var i: number = 0; i < allFeatures.length; i++) {
+//       elevations.push(allFeatures[i].properties.ele);
+//     }
+//     // In the elevations array, find the largest value
+//     var highestElevation: number = Math.max(...elevations);
+//     // Display the largest elevation value
+//     console.log(highestElevation)
+//     return highestElevation;
+//   });
+// }
 
 let charactor;
 let fires = [];
@@ -283,6 +296,7 @@ let fires = [];
 const App = () => {
   _s();
 
+  const classes = useStyles();
   const [user, setUser] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
   const [runaway, setRunaway] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((runaway, action) => {
     // console.log(action)  
@@ -316,22 +330,37 @@ const App = () => {
     return runaway;
   }, []);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    _firebase__WEBPACK_IMPORTED_MODULE_7__["default"].auth().signInAnonymously().catch(function (error) {
+    _firebase__WEBPACK_IMPORTED_MODULE_9__["default"].auth().signInAnonymously().catch(function (error) {
       console.log(`${error.code}, ${error.message}`);
     });
-    _firebase__WEBPACK_IMPORTED_MODULE_7__["default"].auth().onAuthStateChanged(user => {
-      console.log(user);
+    _firebase__WEBPACK_IMPORTED_MODULE_9__["default"].auth().onAuthStateChanged(user => {
+      // console.log(user)
       setUser(user);
     });
   }, []);
-  const [map, setMap] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null); // point of view  
+  const [map, setMap] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((map, action) => {
+    // if (map2) {
+    //   var wrapperSelector = '#wrapper';
+    //   var wrapperElement = document.body.querySelectorAll('#wrapper')[0];
+    //   var map5 = new Compare(map, map2, wrapperElement)
+    // }
+    return action;
+  }, null);
+  const [map2, setMap2] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((map2, action) => {
+    // if (map) {
+    //   var wrapperSelector = '#wrapper';
+    //   var wrapperElement = document.body.querySelectorAll('#wrapper')[0];
+    //   var map5 = new Compare(map, map2, wrapperElement)
+    // }
+    return action;
+  }, null); // point of view  
   // const [map, setMap] = useState<Map | null>(null)
 
   const [followMe, setFollowMe] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((followMe, action) => {
     if (action) {
       followMeRef.update({
         owner: uniqID,
-        last_changed: _firebase__WEBPACK_IMPORTED_MODULE_7__["default"].database.ServerValue.TIMESTAMP
+        last_changed: _firebase__WEBPACK_IMPORTED_MODULE_9__["default"].database.ServerValue.TIMESTAMP
       });
     }
 
@@ -358,11 +387,82 @@ const App = () => {
   //   return action
   // }, false)
 
-  const mapContainer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null); // private db: any = null;
+  const mapContainer = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null);
+  const mapContainer2 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useRef"])(null); // private db: any = null;
 
   const [operation, setOperation] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('fire');
+  const [cheating, setCheating] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((cheating, action) => {
+    let mStyle = '';
+
+    switch (action) {
+      case 0:
+        mStyle = 'mapbox://styles/hisayan/ckl2nl25l0c2l18p09dnbkxvm';
+        break;
+
+      case 5:
+        mStyle = 'mapbox://styles/hisayan/ckl2ntj9z16ez17mkeyow6o5q';
+        break;
+
+      case 10:
+        mStyle = 'mapbox://styles/hisayan/ckl2nv8lw0gyk17psv3cceaed';
+        break;
+
+      case 15:
+        mStyle = 'mapbox://styles/hisayan/ckl2nxzl31m9i17pmopa6q0z0';
+        break;
+
+      case 20:
+        mStyle = 'mapbox://styles/hisayan/ckl2nzkto1m6r17o6c6x0qn1x';
+        break;
+
+      case 25:
+        mStyle = 'mapbox://styles/hisayan/ckl2o100r16k917pxls6f3vng';
+        break;
+
+      case 30:
+        mStyle = 'mapbox://styles/hisayan/ckl2o23h31mdh17pmhx5q6sag';
+        break;
+
+      default:
+        mStyle = 'mapbox://styles/hisayan/ckl0k4enf0lwl17nvffsjmwv4';
+    }
+
+    map2 === null || map2 === void 0 ? void 0 : map2.setStyle(mStyle);
+    return action;
+  }, 0);
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
-    console.log('useEffect'); // const params = new URL(document.location.toString()).searchParams;
+    console.log('useEffect map22222');
+
+    const initializeMap = ({
+      setMap2,
+      mapContainer2
+    }) => {
+      const map2 = new mapbox_gl__WEBPACK_IMPORTED_MODULE_4___default.a.Map({
+        container: mapContainer2.current !== null ? mapContainer2.current : "",
+        style: "mapbox://styles/hisayan/ckl2nl25l0c2l18p09dnbkxvm",
+        // "mapbox://styles/mapbox/streets-v11", // stylesheet location
+        center: [pov.lng, pov.lat],
+        zoom: pov.zoom,
+        pitch: pov.pitch,
+        bearing: pov.bearing,
+        antialias: true // どっちでもいいかも
+
+      });
+      map2.on('load', () => {
+        setMap2(map2);
+      });
+    };
+
+    if (!map2) initializeMap({
+      setMap2,
+      mapContainer2
+    });
+    return () => {
+      map2 === null || map2 === void 0 ? void 0 : map2.remove();
+    };
+  }, [map2]);
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    console.log('useEffect mapmapmapmapmapmapmapmpampa'); // const params = new URL(document.location.toString()).searchParams;
     // let roomName = params.get("room_name");
 
     const initializeMap = ({
@@ -407,7 +507,7 @@ const App = () => {
         }); // 初期値。どうしてじゃ
         // console.log('move', followMe.toString(), JSON.stringify(pov))
 
-        charactor = new _charactor__WEBPACK_IMPORTED_MODULE_10__["default"]({
+        charactor = new _charactor__WEBPACK_IMPORTED_MODULE_13__["default"]({
           lng: 139.7,
           lat: 35.68
         });
@@ -515,6 +615,21 @@ const App = () => {
             };
             setRunaway(a);
 
+            const onMove = () => {
+              var lngLat = marker.getLngLat();
+              console.log(lngLat); // coordinates.style.display = 'block';
+              // coordinates.innerHTML =
+              // 'Longitude: ' + lngLat.lng + '<br />Latitude: ' + lngLat.lat;
+
+              setRunaway({
+                type: 'MOVE',
+                id: el.id,
+                lngLat: lngLat
+              });
+            };
+
+            marker.on('drag', onMove);
+
             const onDragEnd = () => {
               var lngLat = marker.getLngLat();
               console.log(lngLat); // coordinates.style.display = 'block';
@@ -538,7 +653,7 @@ const App = () => {
           break;
 
         case 'fire':
-          let fire = new _fire__WEBPACK_IMPORTED_MODULE_11__["default"](e.lngLat, "fire_layer_" + fires.length);
+          let fire = new _fire__WEBPACK_IMPORTED_MODULE_14__["default"](e.lngLat, "fire_layer_" + fires.length, 300);
           map === null || map === void 0 ? void 0 : map.addLayer(fire.charactorLayer());
           fires.push(fire);
           break;
@@ -568,16 +683,20 @@ const App = () => {
       console.log("povRef.on", value);
       const pov = value.val(); // setPov(pov)
 
-      if (!followMe && pov && initPov) {
-        map === null || map === void 0 ? void 0 : map.jumpTo({
-          center: [pov.lng, pov.lat],
-          zoom: pov.zoom,
-          pitch: pov.pitch,
-          bearing: pov.bearing
-        });
-      }
+      console.log('initPov', initPov);
 
-      initPov = true;
+      if (map) {
+        if (!followMe && pov && initPov) {
+          map === null || map === void 0 ? void 0 : map.jumpTo({
+            center: [pov.lng, pov.lat],
+            zoom: pov.zoom,
+            pitch: pov.pitch,
+            bearing: pov.bearing
+          });
+        }
+
+        initPov = true; // TODO: 機能していないかも
+      }
     }); // これはまぁ、こういうかんじかな
 
     followMeRef.on("value", value => {
@@ -598,7 +717,11 @@ const App = () => {
     //   [32.958984, -5.353521],
     //   [43.50585, 5.615985]
     // ]);
-    console.log('syncView', followMe.toString()); // // これを state にもたせるべきか
+    console.log('syncView', followMe.toString());
+    var wrapperSelector = '#wrapper';
+    var wrapperElement = document.body.querySelectorAll('#wrapper')[0];
+    var map5 = new mapbox_gl_compare__WEBPACK_IMPORTED_MODULE_5___default.a(map, map2, wrapperElement);
+    document.body.classList.add("cheatmode"); // // これを state にもたせるべきか
     // map?.addSource('route', {
     //   'type': 'geojson',
     //   'data': {
@@ -645,73 +768,92 @@ const App = () => {
   };
 
   const handleOperation = (event, newOperation) => {
-    setOperation(newOperation);
+    if (newOperation !== null) {
+      setOperation(newOperation);
+    }
   };
+
+  const handleCheating = (event, newCheating) => {
+    if (!Array.isArray(newCheating)) {
+      setCheating(newCheating);
+    }
+  };
+
+  function cheatingValueText(value) {
+    if (value < 0) {
+      return 'Clear';
+    } else {
+      return `${value} min`;
+    }
+  }
 
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "header",
       children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
-        id: "fit",
+        id: "btnCheat",
         onClick: syncView,
-        children: "sync view"
+        children: "cheat mode"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 521,
+        lineNumber: 662,
         columnNumber: 9
-      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["FormControlLabel"], {
-        control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["FormControlLabel"], {
+        control: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["Switch"], {
           checked: followMe,
           onChange: toggleChecked
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 523,
+          lineNumber: 664,
           columnNumber: 20
         }, undefined),
         label: "Follow me",
         labelPlacement: "start"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 522,
+        lineNumber: 663,
         columnNumber: 9
-      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(StyledToggleButtonGroup, {
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["ToggleButtonGroup"], {
         value: operation,
         onChange: handleOperation,
         exclusive: true,
         "aria-label": "text formatting",
-        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButton"], {
+        children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["ToggleButton"], {
+          size: "small",
           value: "line",
           "aria-label": "line",
           children: "line"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 529,
+          lineNumber: 670,
           columnNumber: 11
-        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButton"], {
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["ToggleButton"], {
+          size: "small",
           value: "fire",
           "aria-label": "fire",
           children: "fire"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 532,
+          lineNumber: 673,
           columnNumber: 11
-        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["ToggleButton"], {
+        }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["ToggleButton"], {
+          size: "small",
           value: "char",
           "aria-label": "char",
           children: "char"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 535,
+          lineNumber: 676,
           columnNumber: 11
         }, undefined)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 528,
+        lineNumber: 669,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 520,
+      lineNumber: 661,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "sidebarStyle",
@@ -719,30 +861,94 @@ const App = () => {
         children: ["Longitude: ", pov.lng.toFixed(4), " | Latitude: ", pov.lat.toFixed(4), " | Zoom: ", pov.zoom.toFixed(2), " | Pitch: ", pov.pitch.toFixed(2), " | Bearing: ", pov.bearing.toFixed(2)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 541,
+        lineNumber: 682,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 540,
+      lineNumber: 681,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      ref: mapContainer,
-      id: "mapContainer",
-      className: "mapContainer"
-    }, void 0, false, {
+      id: "wrapper",
+      children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        id: "after",
+        className: "map",
+        ref: mapContainer2,
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+          className: "footer",
+          children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+            id: "cheating",
+            className: classes.cheating,
+            children: ["Cheat timeline", /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Slider__WEBPACK_IMPORTED_MODULE_11__["default"], {
+              value: cheating,
+              onChangeCommitted: handleCheating,
+              defaultValue: 0,
+              valueLabelFormat: cheatingValueText,
+              getAriaValueText: cheatingValueText,
+              "aria-labelledby": "discrete-slider",
+              valueLabelDisplay: "on",
+              marks: true,
+              step: 5,
+              min: 0,
+              max: 30
+            }, void 0, false, {
+              fileName: _jsxFileName,
+              lineNumber: 693,
+              columnNumber: 15
+            }, undefined)]
+          }, void 0, true, {
+            fileName: _jsxFileName,
+            lineNumber: 688,
+            columnNumber: 13
+          }, undefined)
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 687,
+          columnNumber: 11
+        }, undefined)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 686,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        ref: mapContainer,
+        id: "mapContainer",
+        className: "map",
+        children: "asfsdaf"
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 707,
+        columnNumber: 9
+      }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
+        className: "controls",
+        children: /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("button", {
+          id: "close-button",
+          children: "X"
+        }, void 0, false, {
+          fileName: _jsxFileName,
+          lineNumber: 710,
+          columnNumber: 11
+        }, undefined)
+      }, void 0, false, {
+        fileName: _jsxFileName,
+        lineNumber: 709,
+        columnNumber: 9
+      }, undefined)]
+    }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 543,
+      lineNumber: 684,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 519,
+    lineNumber: 660,
     columnNumber: 5
   }, undefined);
 };
 
-_s(App, "t/cNKYDWhGgzUi+I5lgIOO/n/vg=");
+_s(App, "4eBWQ6+jEUl/LO48mogIkMxoAv0=", false, function () {
+  return [useStyles];
+});
 
 _c = App;
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -1070,8 +1276,9 @@ class Fire {
   // https://github.com/mapbox/mapbox-gl-js/issues/10318
   // elevation
   // https://github.com/mapbox/mapbox-gl-js/issues/10318
-  constructor(lngLat, layerId) {
+  constructor(lngLat, layerId, size) {
     this.layerId = void 0;
+    this.size = 100;
     this.modelOrigin = [139.6947214379419, 35.679861724509934];
     this.modelAltitude = 0;
     this.modelRotate = [Math.PI / 2, 0, 0];
@@ -1084,6 +1291,7 @@ class Fire {
     this.renderer = void 0;
     this.map = void 0;
     this.layerId = layerId;
+    this.size = size;
     this.setLngLat(lngLat);
   }
 
@@ -1100,7 +1308,7 @@ class Fire {
       /* Since our 3D model is in real world meters, a scale transform needs to be
        * applied since the CustomLayerInterface expects units in MercatorCoordinates.
        */
-      scale: this.modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * 100
+      scale: this.modelAsMercatorCoordinate.meterInMercatorCoordinateUnits() * this.size
     };
   }
 
@@ -1169,7 +1377,7 @@ class Fire {
         var m = new three__WEBPACK_IMPORTED_MODULE_0__["Matrix4"]().fromArray(matrix); // console.log(map.painter.terrain.getAtPoint(modelAsMercatorCoordinate) * modelTransform.scale * 100)
 
         var l = new three__WEBPACK_IMPORTED_MODULE_0__["Matrix4"]().makeTranslation(this.modelTransform.translateX, this.modelTransform.translateY, // (modelTransform.translateZ?? 0) + 0.000001852
-        this.map.painter.terrain.getAtPoint(this.modelAsMercatorCoordinate) * this.modelTransform.scale / 100).scale(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](this.modelTransform.scale, -this.modelTransform.scale, this.modelTransform.scale)).multiply(rotationX).multiply(rotationY).multiply(rotationZ);
+        this.map.painter.terrain.getAtPoint(this.modelAsMercatorCoordinate) * this.modelTransform.scale / this.size).scale(new three__WEBPACK_IMPORTED_MODULE_0__["Vector3"](this.modelTransform.scale, -this.modelTransform.scale, this.modelTransform.scale)).multiply(rotationX).multiply(rotationY).multiply(rotationZ);
 
         if (this.mixer) {
           this.mixer.update(this.clock.getDelta());
