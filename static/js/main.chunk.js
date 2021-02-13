@@ -818,6 +818,10 @@ const App = () => {
         if (j.score > 0) {
           alert("スコアは ▲" + j.score + " でした");
         }
+
+        if (j.jihan) {
+          alert("自販機のそば通ったね。災害時には飲み物が提供されるよ。おぼえておいてね。");
+        }
       }
     }).catch(error => {
       console.error(error);
@@ -908,19 +912,19 @@ const App = () => {
           onChange: toggleChecked
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 748,
+          lineNumber: 751,
           columnNumber: 20
         }, undefined),
         label: "Follow me",
         labelPlacement: "start"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 747,
+        lineNumber: 750,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 746,
+      lineNumber: 749,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "sidebarStyle",
@@ -928,12 +932,12 @@ const App = () => {
         children: ["Longitude: ", pov.lng.toFixed(4), " | Latitude: ", pov.lat.toFixed(4), " | Zoom: ", pov.zoom.toFixed(2), " | Pitch: ", pov.pitch.toFixed(2), " | Bearing: ", pov.bearing.toFixed(2)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 766,
+        lineNumber: 769,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 765,
+      lineNumber: 768,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       id: "wrapper",
@@ -960,22 +964,22 @@ const App = () => {
               max: 30
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 777,
+              lineNumber: 780,
               columnNumber: 15
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 772,
+            lineNumber: 775,
             columnNumber: 13
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 771,
+          lineNumber: 774,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 770,
+        lineNumber: 773,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         ref: mapContainer,
@@ -990,7 +994,7 @@ const App = () => {
             children: "Clear Line"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 793,
+            lineNumber: 796,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1000,7 +1004,7 @@ const App = () => {
             children: "What's your Score"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 794,
+            lineNumber: 797,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1010,17 +1014,17 @@ const App = () => {
             children: "cheat mode"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 795,
+            lineNumber: 798,
             columnNumber: 12
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 792,
+          lineNumber: 795,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 791,
+        lineNumber: 794,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         className: "controls",
@@ -1029,22 +1033,22 @@ const App = () => {
           children: "X"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 801,
+          lineNumber: 804,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 800,
+        lineNumber: 803,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 768,
+      lineNumber: 771,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 745,
+    lineNumber: 748,
     columnNumber: 5
   }, undefined);
 };
