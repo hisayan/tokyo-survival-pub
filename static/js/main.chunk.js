@@ -814,7 +814,7 @@ const App = () => {
       } else {
         alert("あなたは " + Math.floor(j.m) + "メートル避難しました");
 
-        if (jsonData.score > 0) {
+        if (j.score > 0) {
           alert("スコアは ▲" + j.score + " でした");
         }
       }
