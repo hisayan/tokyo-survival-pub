@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody * {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  user-select: none; }\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold; }\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0; }\n\n.map {\n  position: absolute !important;\n  top: 0;\n  bottom: 0;\n  width: 100%; }\n\n.controls {\n  position: absolute;\n  top: 0;\n  right: 0; }\n\n.marker {\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer; }\n\n.header {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto; }\n\n.footer1 {\n  display: block;\n  z-index: 1 !important;\n  background-color: rgba(136, 136, 136, 0.5);\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  height: 4em;\n  padding-top: 1em;\n  text-align: center; }\n\n.footer {\n  z-index: 1 !important;\n  display: none;\n  background-color: rgba(136, 136, 136, 0.5);\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  height: 4em;\n  padding-top: 1em;\n  text-align: center; }\n\nbody.cheatmode .footer {\n  display: block; }\n\nbody.cheatmode #btnCheat {\n  display: none; }\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan; }\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white; }\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em; } }\n\n#cheating {\n  margin: auto; }\n\nbutton.MuiButtonBase-root {\n  margin: 0 0.8em; }\n", "",{"version":3,"sources":["webpack://src/App.scss"],"names":[],"mappings":"AAAA;EAAO,SAAQ;EAAE,UAAS;EAAE,gBAAe,EAAA;;AAC3C;EACG,2BAA2B;EACzB,yBAAyB;EAGjB,iBAAiB,EAAA;;AAG9B;EACE,qBAAqB;EACrB,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,qBAAqB;EACrB,YAAY;EACZ,iBAAiB,EAAA;;AAGnB;EACE,kBAAkB;EAClB,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS,EAAA;;AAQX;EACE,6BAA4B;EAC5B,MAAK;EACL,SAAQ;EACR,WAAU,EAAA;;AAEZ;EACE,kBAAiB;EACjB,MAAK;EACL,QAAO,EAAA;;AAGT;EAIE,uBAAuB;EACvB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;EACnB,iBAAiB;EACjB,mBAAmB;EACnB,eAAe,EAAA;;AAGjB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA;;AAGlB;EACE,cAAc;EACd,qBAAqB;EAErB,0CAAmC;EAEnC,eAAc;EACd,SAAQ;EACR,OAAM;EACN,WAAU;EACV,WAAU;EACV,WAAU;EACV,gBAAgB;EAChB,kBAAoB,EAAA;;AAGtB;EACE,qBAAqB;EAErB,aAAY;EACZ,0CAAmC;EAEnC,eAAc;EACd,SAAQ;EACR,OAAM;EACN,WAAU;EACV,WAAU;EACV,WAAU;EACV,gBAAgB;EAChB,kBAAoB,EAAA;;AAGtB;EACE,cAAa,EAAA;;AAGf;EACE,aAAa,EAAA;;AAGf;EACE,oBAAoB;EACpB,2BAA2B,EAAA;;AAG7B;EACE,oBAAoB;EACpB,uBAAuB,EAAA;;AAGzB;EACE;IACE,mBAAmB,EAAA,EACpB;;AAGH;EACE,YAAY,EAAA;;AAGd;EACC,eAAc,EAAA","sourcesContent":["body { margin:0; padding:0; overflow:hidden; }\nbody * {\n   -webkit-touch-callout: none;\n     -webkit-user-select: none;\n        -moz-user-select: none;\n         -ms-user-select: none;\n             user-select: none;\n}\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold;\n}\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n}\n\n\n#wrapper {\n\n}\n\n.map {\n  position:absolute !important;\n  top:0;\n  bottom:0;\n  width:100%;\n}\n.controls {\n  position:absolute;\n  top:0;\n  right:0;\n}\n\n.marker {\n  // background-image: url('mapbox-icon.png');\n  // background-size: cover;\n\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer;\n}\n\n.header {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n}\n\n.footer1 {\n  display: block;\n  z-index: 1 !important;\n\n  background-color: rgba($color: #888, $alpha: 0.5);\n\n  position:fixed;\n  bottom:0;\n  left:0;\n  z-index:10;\n  width:100%;\n  height:4em;\n  padding-top: 1em;\n  text-align: center  ;\n}\n\n.footer {\n  z-index: 1 !important;\n\n  display:none;\n  background-color: rgba($color: #888, $alpha: 0.5);\n\n  position:fixed;\n  bottom:0;\n  left:0;\n  z-index:10;\n  width:100%;\n  height:4em;\n  padding-top: 1em;\n  text-align: center  ;\n}\n\nbody.cheatmode .footer {\n  display:block;\n}\n\nbody.cheatmode #btnCheat {\n  display: none;\n}\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan;\n}\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white;\n}\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em;\n  }\n}\n\n#cheating {\n  margin: auto;\n}\n\nbutton.MuiButtonBase-root\n{margin:0 0.8em;}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody * {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  user-select: none; }\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold; }\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0; }\n\n.map {\n  position: absolute !important;\n  top: 0;\n  bottom: 0;\n  width: 100%; }\n\n.controls {\n  position: absolute;\n  top: 0;\n  right: 0; }\n\n.marker {\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer; }\n\n.header {\n  z-index: 1 !important;\n  display: block;\n  position: relative;\n  margin: 0px auto; }\n\n.footer1 {\n  display: block;\n  z-index: 1 !important;\n  background-color: rgba(136, 136, 136, 0.5);\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  height: 8em;\n  padding-top: 1em;\n  text-align: center; }\n\n.footer {\n  z-index: 1 !important;\n  display: none;\n  background-color: rgba(136, 136, 136, 0.5);\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  height: 4em;\n  padding-top: 1em;\n  text-align: center; }\n\nbody.cheatmode .footer {\n  display: block; }\n\nbody.cheatmode #btnCheat {\n  display: none; }\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan; }\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white; }\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em; } }\n\n#cheating {\n  margin: auto; }\n\nbutton.MuiButtonBase-root {\n  margin: 0 0.8em; }\n", "",{"version":3,"sources":["webpack://src/App.scss"],"names":[],"mappings":"AAAA;EAAO,SAAQ;EAAE,UAAS;EAAE,gBAAe,EAAA;;AAC3C;EACG,2BAA2B;EACzB,yBAAyB;EAGjB,iBAAiB,EAAA;;AAG9B;EACE,qBAAqB;EACrB,kBAAkB;EAClB,MAAM;EACN,OAAO;EACP,YAAY;EACZ,yBAAyB;EACzB,cAAc;EACd,qBAAqB;EACrB,YAAY;EACZ,iBAAiB,EAAA;;AAGnB;EACE,kBAAkB;EAClB,MAAM;EACN,QAAQ;EACR,OAAO;EACP,SAAS,EAAA;;AAQX;EACE,6BAA4B;EAC5B,MAAK;EACL,SAAQ;EACR,WAAU,EAAA;;AAEZ;EACE,kBAAiB;EACjB,MAAK;EACL,QAAO,EAAA;;AAGT;EAIE,uBAAuB;EACvB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,mBAAmB;EACnB,iBAAiB;EACjB,mBAAmB;EACnB,eAAe,EAAA;;AAGjB;EACE,qBAAqB;EAErB,cAAc;EACd,kBAAkB;EAClB,gBAAgB,EAAA;;AAGlB;EACE,cAAc;EACd,qBAAqB;EAErB,0CAAmC;EAEnC,eAAc;EACd,SAAQ;EACR,OAAM;EACN,WAAU;EACV,WAAU;EACV,WAAU;EACV,gBAAgB;EAChB,kBAAoB,EAAA;;AAGtB;EACE,qBAAqB;EAErB,aAAY;EACZ,0CAAmC;EAEnC,eAAc;EACd,SAAQ;EACR,OAAM;EACN,WAAU;EACV,WAAU;EACV,WAAU;EACV,gBAAgB;EAChB,kBAAoB,EAAA;;AAGtB;EACE,cAAa,EAAA;;AAGf;EACE,aAAa,EAAA;;AAGf;EACE,oBAAoB;EACpB,2BAA2B,EAAA;;AAG7B;EACE,oBAAoB;EACpB,uBAAuB,EAAA;;AAGzB;EACE;IACE,mBAAmB,EAAA,EACpB;;AAGH;EACE,YAAY,EAAA;;AAGd;EACC,eAAc,EAAA","sourcesContent":["body { margin:0; padding:0; overflow:hidden; }\nbody * {\n   -webkit-touch-callout: none;\n     -webkit-user-select: none;\n        -moz-user-select: none;\n         -ms-user-select: none;\n             user-select: none;\n}\n\n.sidebarStyle {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 12px;\n  background-color: #404040;\n  color: #ffffff;\n  z-index: 1 !important;\n  padding: 6px;\n  font-weight: bold;\n}\n\n.mapContainer.mapboxgl-map {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0;\n}\n\n\n#wrapper {\n\n}\n\n.map {\n  position:absolute !important;\n  top:0;\n  bottom:0;\n  width:100%;\n}\n.controls {\n  position:absolute;\n  top:0;\n  right:0;\n}\n\n.marker {\n  // background-image: url('mapbox-icon.png');\n  // background-size: cover;\n\n  background-color: white;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  border-color: black;\n  border-width: 3px;\n  border-style: solid;\n  cursor: pointer;\n}\n\n.header {\n  z-index: 1 !important;\n\n  display: block;\n  position: relative;\n  margin: 0px auto;\n}\n\n.footer1 {\n  display: block;\n  z-index: 1 !important;\n\n  background-color: rgba($color: #888, $alpha: 0.5);\n\n  position:fixed;\n  bottom:0;\n  left:0;\n  z-index:10;\n  width:100%;\n  height:8em;\n  padding-top: 1em;\n  text-align: center  ;\n}\n\n.footer {\n  z-index: 1 !important;\n\n  display:none;\n  background-color: rgba($color: #888, $alpha: 0.5);\n\n  position:fixed;\n  bottom:0;\n  left:0;\n  z-index:10;\n  width:100%;\n  height:4em;\n  padding-top: 1em;\n  text-align: center  ;\n}\n\nbody.cheatmode .footer {\n  display:block;\n}\n\nbody.cheatmode #btnCheat {\n  display: none;\n}\n\n.footer .MuiToggleButton-root:hover {\n  color: darkslategrey;\n  background-color: lightcyan;\n}\n\n.footer .MuiToggleButton-root.Mui-selected {\n  color: darkslategrey;\n  background-color: white;\n}\n\n@media only screen and (max-device-width: 768px) {\n  .footer {\n    padding-bottom: 2em;\n  }\n}\n\n#cheating {\n  margin: auto;\n}\n\nbutton.MuiButtonBase-root\n{margin:0 0.8em;}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -562,6 +562,10 @@ const App = () => {
         // directions.on('route', (e: any) => {
         //   console.log(e)
         // })
+        charactor.setLngLat({
+          lng: 35.6895014,
+          lat: 139.6917337
+        });
         map === null || map === void 0 ? void 0 : map.on('move', () => {
           setPov({
             lng: map.getCenter().lng,
@@ -908,19 +912,19 @@ const App = () => {
           onChange: toggleChecked
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 747,
+          lineNumber: 748,
           columnNumber: 20
         }, undefined),
         label: "Follow me",
         labelPlacement: "start"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 746,
+        lineNumber: 747,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 745,
+      lineNumber: 746,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "sidebarStyle",
@@ -928,12 +932,12 @@ const App = () => {
         children: ["Longitude: ", pov.lng.toFixed(4), " | Latitude: ", pov.lat.toFixed(4), " | Zoom: ", pov.zoom.toFixed(2), " | Pitch: ", pov.pitch.toFixed(2), " | Bearing: ", pov.bearing.toFixed(2)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 765,
+        lineNumber: 766,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 764,
+      lineNumber: 765,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       id: "wrapper",
@@ -960,22 +964,22 @@ const App = () => {
               max: 30
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 776,
+              lineNumber: 777,
               columnNumber: 15
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 771,
+            lineNumber: 772,
             columnNumber: 13
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 770,
+          lineNumber: 771,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 769,
+        lineNumber: 770,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         ref: mapContainer,
@@ -990,7 +994,7 @@ const App = () => {
             children: "Clear Line"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 792,
+            lineNumber: 793,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1000,7 +1004,7 @@ const App = () => {
             children: "What's your Score"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 793,
+            lineNumber: 794,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1010,17 +1014,17 @@ const App = () => {
             children: "cheat mode"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 794,
+            lineNumber: 795,
             columnNumber: 12
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 791,
+          lineNumber: 792,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 790,
+        lineNumber: 791,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         className: "controls",
@@ -1029,22 +1033,22 @@ const App = () => {
           children: "X"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 800,
+          lineNumber: 801,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 799,
+        lineNumber: 800,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 767,
+      lineNumber: 768,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 744,
+    lineNumber: 745,
     columnNumber: 5
   }, undefined);
 };
