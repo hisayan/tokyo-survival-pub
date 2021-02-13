@@ -516,7 +516,7 @@ const App = () => {
       map2.on('load', () => {
         // add the DEM source as a terrain layer with exaggerated height
         setMap2(map2);
-        setCheating(0);
+        setCheating(20);
       });
     };
 
