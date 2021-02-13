@@ -243,7 +243,8 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
 // type Coordinates<Coordinate> = [<Coordinate>]
 
 const params = new URLSearchParams(document.location.search.toString());
-const roomName = params.get("room"); // const roomName = new URL(document.location.toString()).pathname;
+const roomName = params.get("room");
+const admin = params.get("admin"); // const roomName = new URL(document.location.toString()).pathname;
 
 if (!roomName || roomName == '/') {
   let roomName = null;
@@ -368,7 +369,7 @@ const App = () => {
   // const [map, setMap] = useState<Map | null>(null)
 
   const [followMe, setFollowMe] = Object(react__WEBPACK_IMPORTED_MODULE_1__["useReducer"])((followMe, action) => {
-    if (action) {
+    if (action && admin) {
       followMeRef.update({
         owner: uniqID,
         last_changed: _firebase__WEBPACK_IMPORTED_MODULE_10__["default"].database.ServerValue.TIMESTAMP
@@ -912,19 +913,19 @@ const App = () => {
           onChange: toggleChecked
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 751,
+          lineNumber: 752,
           columnNumber: 20
         }, undefined),
         label: "Follow me",
         labelPlacement: "start"
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 750,
+        lineNumber: 751,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 749,
+      lineNumber: 750,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       className: "sidebarStyle",
@@ -932,12 +933,12 @@ const App = () => {
         children: ["Longitude: ", pov.lng.toFixed(4), " | Latitude: ", pov.lat.toFixed(4), " | Zoom: ", pov.zoom.toFixed(2), " | Pitch: ", pov.pitch.toFixed(2), " | Bearing: ", pov.bearing.toFixed(2)]
       }, void 0, true, {
         fileName: _jsxFileName,
-        lineNumber: 769,
+        lineNumber: 770,
         columnNumber: 9
       }, undefined)
     }, void 0, false, {
       fileName: _jsxFileName,
-      lineNumber: 768,
+      lineNumber: 769,
       columnNumber: 7
     }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
       id: "wrapper",
@@ -964,22 +965,22 @@ const App = () => {
               max: 30
             }, void 0, false, {
               fileName: _jsxFileName,
-              lineNumber: 780,
+              lineNumber: 781,
               columnNumber: 15
             }, undefined)]
           }, void 0, true, {
             fileName: _jsxFileName,
-            lineNumber: 775,
+            lineNumber: 776,
             columnNumber: 13
           }, undefined)
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 774,
+          lineNumber: 775,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 773,
+        lineNumber: 774,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         ref: mapContainer,
@@ -994,7 +995,7 @@ const App = () => {
             children: "Clear Line"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 796,
+            lineNumber: 797,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1004,7 +1005,7 @@ const App = () => {
             children: "What's your Score"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 797,
+            lineNumber: 798,
             columnNumber: 11
           }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
             variant: "contained",
@@ -1014,17 +1015,17 @@ const App = () => {
             children: "cheat mode"
           }, void 0, false, {
             fileName: _jsxFileName,
-            lineNumber: 798,
+            lineNumber: 799,
             columnNumber: 12
           }, undefined)]
         }, void 0, true, {
           fileName: _jsxFileName,
-          lineNumber: 795,
+          lineNumber: 796,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 794,
+        lineNumber: 795,
         columnNumber: 9
       }, undefined), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
         className: "controls",
@@ -1033,22 +1034,22 @@ const App = () => {
           children: "X"
         }, void 0, false, {
           fileName: _jsxFileName,
-          lineNumber: 804,
+          lineNumber: 805,
           columnNumber: 11
         }, undefined)
       }, void 0, false, {
         fileName: _jsxFileName,
-        lineNumber: 803,
+        lineNumber: 804,
         columnNumber: 9
       }, undefined)]
     }, void 0, true, {
       fileName: _jsxFileName,
-      lineNumber: 771,
+      lineNumber: 772,
       columnNumber: 7
     }, undefined)]
   }, void 0, true, {
     fileName: _jsxFileName,
-    lineNumber: 748,
+    lineNumber: 749,
     columnNumber: 5
   }, undefined);
 };
