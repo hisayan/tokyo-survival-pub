@@ -385,8 +385,8 @@ const App = () => {
 
     return action;
   }, {
-    lng: 139.7,
-    lat: 35.68,
+    lng: 139.6917337,
+    lat: 35.6895014,
     zoom: 17,
     pitch: 85,
     bearing: 80
@@ -562,10 +562,6 @@ const App = () => {
         // directions.on('route', (e: any) => {
         //   console.log(e)
         // })
-        charactor.setLngLat({
-          lng: 35.6895014,
-          lat: 139.6917337
-        });
         map === null || map === void 0 ? void 0 : map.on('move', () => {
           setPov({
             lng: map.getCenter().lng,
@@ -578,8 +574,8 @@ const App = () => {
         // console.log('move', followMe.toString(), JSON.stringify(pov))
 
         charactor = new _charactor__WEBPACK_IMPORTED_MODULE_13__["default"]({
-          lng: 139.7,
-          lat: 35.68
+          lng: 139.6917337,
+          lat: 35.6895014
         });
         map === null || map === void 0 ? void 0 : map.addLayer(charactor.charactorLayer);
         map === null || map === void 0 ? void 0 : map.addSource('mapbox-dem', {
@@ -1053,7 +1049,7 @@ const App = () => {
   }, undefined);
 };
 
-_s(App, "jxOIJlpaMz3UpGy0oAFHld/8Mbg=", false, function () {
+_s(App, "7WRM64NCsEUSd8t8PZQBJBWjL3U=", false, function () {
   return [useStyles];
 });
 
