@@ -807,10 +807,11 @@ const App = () => {
         'Content-Type': 'application/json'
       }
     }).then(res => res.json()).then(jsonData => {
-      if (jsonData.length != 1) {
+      let j = jsonData[0].calc_score[0];
+
+      if (!j) {
         return alert("スコア計算に失敗しました");
       } else {
-        let j = jsonData[0];
         alert("あなたは " + Math.floor(j.m) + "メートル避難しました");
 
         if (jsonData.score > 0) {
