@@ -459,7 +459,7 @@ const App = () => {
         }
       }
 
-      fetch('https://postgrest1.5656map.jp/rpc/fires', {
+      fetch('https://postgrest1.5656map.jp:3000/rpc/fires', {
         method: 'POST',
         body: JSON.stringify({
           "in_scenario": 1,
@@ -797,7 +797,7 @@ const App = () => {
         }
       }
     };
-    fetch('https://postgrest1.5656map.jp/rpc/calc_score', {
+    fetch('https://postgrest1.5656map.jp:3000/rpc/calc_score', {
       method: 'POST',
       body: JSON.stringify({
         "in_scenario": 1,
