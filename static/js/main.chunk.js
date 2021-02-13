@@ -477,8 +477,8 @@ const App = () => {
             s = 500;
           }
 
-          if (s < 100) {
-            s = 100;
+          if (s < 200) {
+            s = 200;
           }
 
           let fire = new _fire__WEBPACK_IMPORTED_MODULE_14__["default"]({
